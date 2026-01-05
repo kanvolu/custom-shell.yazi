@@ -155,7 +155,7 @@ local function entry(_, job)
 		end
 		local value, event = ya.input({
 			title = "Custom-Shell History",
-			position = { "top-center", y = 3, w = 40 },
+			pos = { "top-center", y = 3, w = 40 },
 			value = his_cmd,
 		})
 		if event == 1 then
@@ -177,7 +177,7 @@ local function entry(_, job)
 	if job.args[1] ~= "custom" and job.args[1] ~= "history" then
 		cmd, event = ya.input({
 			title = input_title,
-			position = { "top-center", y = 3, w = 40 },
+			pos = { "top-center", y = 3, w = 40 },
 		})
 	end
 
